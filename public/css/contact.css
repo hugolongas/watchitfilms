@@ -1,0 +1,298 @@
+/*CONTACT*/
+body .contact{
+    background-color:#5795ce;
+    color:white;   
+    min-height: calc(100vh - 100px);
+}
+
+.contact #navbar{
+    background-color:#5795ce;
+}
+
+#contact{
+    padding: 90px 20px 0px;
+    max-width: 1000px;
+    margin: 0px auto;
+}
+
+#contact .contact-text{
+    padding:0px;
+    margin-bottom:50px;
+}
+
+.contact .contact-text h2{
+    font-size:22px;
+    font-weight: 600;
+    margin-bottom:20px;
+}
+
+.contact .contact-text p{
+    font-size:15px;
+    margin-bottom:30px;
+}
+
+.contact .contact-text span{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact .contact-text .contact-info{
+    padding:0px 0px 0px 0px;
+    margin-bottom:20px;
+}
+
+.contact .contact-text .contact-info #contact-email a,
+.contact .contact-text .contact-info #contact-tel a{
+    color:white;
+    text-decoration: underline;
+}
+
+.contact .contact-text .contact-info #contact-email a:hover,
+.contact .contact-text .contact-info #contact-tel a:hover{
+    font-weight: 600;
+}
+
+.contact .contact-text .contact-rrss{
+    overflow: hidden;
+    margin: 40px 0px;
+}
+
+.contact .contact-text .contact-rrss .rrss-items {
+    width: 35px;
+    height: 35px;
+    display: block;
+    float: left;
+    margin:0px 10px;
+}
+.contact .contact-text .contact-rrss .rrss-items:first-child {
+    margin-left:0px;
+}
+.contact .contact-text .contact-rrss .rrss-items:last-child {
+    margin-right:0px;
+}
+
+.contact .form-contact
+{
+    background: transparent;
+    border: none;
+    color:white;
+    border-bottom:1px solid white;
+}
+
+.contact .form-contact::placeholder
+{
+    color:white; 
+}
+
+.contact textarea.form-contact
+{
+    resize:none;
+    overflow:auto;
+}
+
+.contact .btn-contact {
+    position: relative;
+    width: 120px;
+    height: 50px;
+    margin: 40px 0px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 0;
+    box-sizing: content-box;
+    border: 2px solid transparent;
+}
+
+.contact .btn-contact::before,
+.contact .btn-contact::after,
+.contact .btn-contact span::before,
+.contact .btn-contact span::after {
+    display: block;
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+}
+
+.contact .btn-contact::before {
+    top: -2px;
+    left: -2px;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+}
+.contact .btn-contact::after {
+    top: -2px;
+    right: -2px;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+}
+.contact .btn-contact span::before {
+    bottom: -2px;
+    left: -2px;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+}
+.contact .btn-contact span::after {
+    bottom: -2px;
+    right: -2px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+}
+
+.contact .btn-contact:hover {
+  border: 2px solid white;
+}
+
+
+.spinner {
+    position: absolute;
+    z-index: 2;
+    display: none;
+    width: 100%;
+    height: 100%;
+    margin: 0 !important;
+    padding: 0;
+    background-color: rgba(255,255,255,.65);
+    left: 0;
+}
+
+.spinner-loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 160px;
+    height: 160px;
+    margin: -80px;
+}
+
+.spinner-loader .double-bounce1,.spinner-loader .double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #5795ce;
+    opacity: .6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: sk-bounce 2s infinite ease-in-out;
+    animation: sk-bounce 2s infinite ease-in-out;
+}
+
+.spinner-loader .double-bounce2 {
+    -webkit-animation-delay: -1s;
+    animation-delay: -1s;
+}
+
+@-webkit-keyframes sk-bounce {
+    0%,100% {
+        -webkit-transform: scale(0);
+    }
+
+    50% {
+        -webkit-transform: scale(1);
+    }
+}
+
+@keyframes sk-bounce {
+    0%,100% {
+        transform: scale(0);
+        -webkit-transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+}
+
+.spinner-active {
+    display: block;
+}
+
+
+.form-check .container {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 15px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+}
+/* Hide the browser's default checkbox */
+.form-check .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.form-check .container a {
+    color:white;
+    text-decoration: underline;
+}
+
+.form-check .container a:hover {
+    font-weight: 600;
+}
+
+/* Create a custom checkbox */
+.form-check .checkmark {
+position: absolute;
+top: 0;
+left: 0;
+height: 20px;
+width: 20px;
+background-color: #fff;
+}
+
+/* On mouse-over, add a grey background color */
+.form-check .container:hover input ~ .checkmark {
+background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.form-check .container input:checked ~ .checkmark {
+background-color: #fff;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.form-check .checkmark:after {
+content: "";
+position: absolute;
+display: none;
+}
+
+/* Show the checkmark when checked */
+.form-check .container input:checked ~ .checkmark:after {
+display: block;
+}
+
+/* Style the checkmark/indicator */
+.form-check .container .checkmark:after {
+left: 9px;
+top: 5px;
+width: 5px;
+height: 10px;
+border: solid #5795ce;
+border-width: 0 3px 3px 0;
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+
+@media (min-width: 768px) {
+    .contact{
+        margin: 100px auto 0px;
+    }
+    .contact .contact-text {
+        padding: 0px 43px 0px 0px;    
+    }
+    .contact .contact-text .contact-info{
+        padding:0px 100px 0px 0px;     
+    }
+}

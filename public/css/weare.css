@@ -1,0 +1,95 @@
+/*WEARE*/
+body .weare{
+    background-color:#5795ce;
+    color:white;
+    min-height: calc(100vh - 100px);
+}
+
+.weare #navbar{
+    background-color:#5795ce;
+}
+
+#weare{
+    padding: 90px 20px 10px;
+    max-width: 1000px;
+    margin: 0px auto;
+}
+
+.weare .weare-text{
+    padding:0px;
+    margin-bottom:50px;
+}
+
+.weare .weare-text h2{
+    font-size:22px;
+    font-weight: 600;
+    margin-bottom:20px;
+}
+
+.weare .weare-text p{
+    font-size:15px;
+    margin-bottom:30px;
+}
+
+#weare .member {
+    margin-bottom: 10px;
+}
+
+#weare .member .img-container{
+    overflow: hidden;
+    height: auto;
+}
+#weare .member .img-container .img-member{
+    max-width: 320px;
+}
+
+#weare .member .member-info .member-name {
+    display: block;
+    font-size: 16px;
+}
+#weare .member .member-info .member-position {
+    display: block;
+    font-size: 16px;
+}
+
+#weare .linkedin-url{
+    position: absolute;
+    width: 25px;
+    height: 24px;
+    right: 15px;
+    top: 2px;
+    z-index: 10;
+}
+
+
+@media (min-width: 768px) {
+    #weare{
+        margin: 100px auto 0px;
+    }
+    #weare .member .img-container{
+        overflow: hidden;
+        height: 218px;
+    }
+    #weare .member .img-container .img-member{
+        max-width: 500px;
+    }
+    
+    #weare .member:hover .img-container .img-member{
+        transform: translate(-217px);
+    }
+    #weare .weare-text {
+        padding: 0px 43px 0px 0px;    
+        max-height: 680px;
+        overflow: auto;
+    }
+    #weare .member:hover .member-info .member-position:after{
+        content: "";
+        display: block;
+        background-color:#f8ec22;
+        width: 50%;
+        height: 20px;
+        margin-top: -20px;
+        opacity: 0.7;
+        transform: rotate(-4deg);
+    }
+}

@@ -1,0 +1,34 @@
+/*article*/
+body .politica,
+body .cookies{
+    background-color:rgba(254,254,254);
+    color:#838383;    
+}
+body .politica #navbar,
+body .cookies #navbar{
+    background-color:rgba(254,254,254);
+    color:#838383;    
+}
+body .politica .navbar .rrss .rrss-items,
+body .cookie .navbar .rrss .rrss-items{
+    width:36px;
+    height:36px;
+    color:#838383;
+    float:left;
+}
+body .politica .navbar .nav-item .nav-link,
+body .cookie .navbar .nav-item .nav-link{
+    color:#838383;
+}
+body .politica .navbar .nav-item .nav-link:hover,
+body .cookie .navbar .nav-item .nav-link:hover{
+    text-decoration: underline;
+    color:#838383;
+}
+.politica #politica,
+.cookie #cookie{
+    padding: 100px 20px 0px;        
+    max-width:900px;
+    width:100%;
+    margin:10px auto;
+}
